@@ -1,0 +1,18 @@
+<div class="fixed">
+  <nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="{{ '/' | prepend: site.baseurl }}">rowerotopia.pl</a></h1>
+      </li>
+    </ul>
+
+    <section class="top-bar-section">
+      <ul class="right">
+        <li><a href="https://www.facebook.com/rowerotopia" class="rt-icon-inline">{% include svg/facebook.svg %}</a></li>
+        {% if (page.drawer_toggle) %}
+        <li><a class="rt-menu-icon" data-drawer-toggle><span>Spis treści</span></a></li>
+        {% endif %}
+      </ul>
+    </section>
+  </nav>
+</div>

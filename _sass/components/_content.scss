@@ -1,0 +1,41 @@
+.content {
+  max-width: $content-width;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+
+  &__text {
+    font-family: $font-family-serif;
+    font-size: 18px;
+    line-height: 30px;
+
+    @media (min-width: $breakpoint-md) {
+      font-size: 20px;
+      line-height: 32px;
+    }
+
+    &--with-initial {
+      &:first-of-type:first-letter {
+        font-size: 48px;
+        font-weight: bold;
+        margin-top: 14px;
+        margin-right: 6px;
+        float: left;
+
+        @media (min-width: $breakpoint-md) {
+          font-size: 64px;
+        }
+      }
+    }
+  }
+
+  &--wider {
+    max-width: $content-width-wider;
+  }
+
+  &--widest {
+    max-width: $content-width-widest;
+  }
+}

@@ -1,0 +1,22 @@
+---
+layout: default
+title: Blog o turystyce rowerowej
+---
+
+<div class="home__intro">
+  <div class="home__logo">
+    {% include svg/logo.svg %}
+  </div>
+</div>
+
+<div class="content">
+  {% include cards/feature-card.html post=site.posts.first %}
+
+  <div class="home__cards">
+    {% for post in site.posts offset:1 %}
+      <div class="home__card">
+        {% include cards/post-card.html post=post %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
