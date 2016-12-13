@@ -1,0 +1,67 @@
+.pull-out {
+  margin: 30px auto;
+
+  &__img {
+    width: 100%;
+    height: auto;
+    background: $bg-secondary;
+    min-height: 100px;
+  }
+
+  @media (min-width: $breakpoint-sm) {
+    width: 240px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+    a {
+      cursor: zoom-in;
+    }
+
+    &--left {
+      float: left;
+      margin-left: 0;
+    }
+
+    &--right {
+      float: right;
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: $breakpoint-md) {
+    width: 320px;
+
+    &--left {
+      margin-left: -15%;
+    }
+
+    &--right {
+      margin-right: -15%;
+    }
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    &--left {
+      margin-left: -30%;
+    }
+
+    &--right {
+      margin-right: -30%;
+    }
+  }
+
+  &--expanded {
+    float: none;
+    width: 100%;
+    margin: 0;
+
+    a {
+      cursor: inherit;
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      width: $content-width-widest;
+      margin-left: -($content-width-wider - $content-width);
+    }
+  }
+}

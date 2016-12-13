@@ -1,0 +1,22 @@
+.clearfix {
+  clear: both;
+}
+
+.ratio-16-9 {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+
+  &__inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.content-spacer {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}

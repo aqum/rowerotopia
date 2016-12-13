@@ -1,0 +1,31 @@
+.home {
+  &__intro {
+    text-align: center;
+    background: $brand-primary;
+    padding-bottom: 150px;
+    margin-bottom: -150px;
+    color: #fff;
+  }
+
+  &__logo {
+    padding: 30px;
+
+    svg {
+      width: 350px;
+      max-width: 100%;
+      height: auto;
+
+      path {
+        fill: #fff;
+      }
+    }
+  }
+
+  &__cards {
+    margin-top: 80px;
+  }
+
+  &__card {
+    margin-top: 50px;
+  }
+}

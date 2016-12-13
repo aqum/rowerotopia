@@ -1,0 +1,43 @@
+.showcase-overlay {
+  position: relative;
+  overflow: hidden;
+
+  &__content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: background 0.2s ease-in-out;
+  }
+
+  &__bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 150px;
+    background: $bg-secondary;
+  }
+
+  &__icon {
+    svg {
+      fill: #fff;
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  &:hover &__content {
+    background: rgba(0,0,0,0.7);
+  }
+}

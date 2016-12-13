@@ -1,0 +1,9 @@
+jekyll:
+  image: jekyll/jekyll:pages
+  command: jekyll serve --baseurl=""
+  volumes:
+    - ./src:/src
+  working_dir: /src
+  ports:
+    - '4000:4000'
+

@@ -1,0 +1,51 @@
+.post-card {
+  display: flex;
+  flex-direction: column;
+  color: $font-color-base;
+  text-decoration: none;
+
+  @media (min-width: $breakpoint-sm) {
+    flex-direction: row;
+  }
+
+  &__cover {
+    flex-shrink: 0;
+
+    @media (min-width: $breakpoint-sm) {
+      flex-basis: 300px;
+    }
+  }
+
+  &__cover-img {
+    width: 100%;
+    display: block;
+  }
+
+  &__meta {
+    margin-top: 20px;
+
+    @media (min-width: $breakpoint-sm) {
+      margin-top: 0;
+      margin-left: 20px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__excerpt {
+    margin-top: 10px;
+    font-family: $font-family-serif;
+  }
+
+  &:hover {
+    .post-card__title {
+      color: $brand-primary;
+    }
+
+    .post-card__excerpt {
+      color: $font-color-base;
+    }
+  }
+}

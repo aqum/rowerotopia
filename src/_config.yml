@@ -1,0 +1,17 @@
+# Site settings
+name: "Rowerotopia.pl"
+title: "Rowerotopia.pl - opisy wypraw rowerowych, przygotowań i sprzętu"
+email: adam.florczak@me.com
+description: "Blog o turystyce rowerowej. Opisy tras i wycieczek. Bikepacking. Testy sprzętu, akcesoria campingowe, opinie, porady."
+baseurl: "http://rowerotopia.pl"
+url: ""
+cover: "/assets/posts/2014-08-17/cover.jpg"
+
+# Build settings
+markdown: kramdown
+
+include: ["_pages"]
+permalink: /:title/
+future: true
+sass:
+  sass_dir: _sass

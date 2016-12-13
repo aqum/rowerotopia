@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | prepend: site.baseurl }}">
+    {% include head.html %}
+  </head>
+  <body>
+    {% include navbar.html %}
+
+    <div class="rt-trip-wrapper">
+      {{ content }}
+    </div>
+
+    {% include footer.html %}
+
+    <script src="{{ "/assets/js/scripts.min.js" | prepend: site.baseurl }}"></script>
+  </body>
+</html>
