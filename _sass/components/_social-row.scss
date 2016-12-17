@@ -1,0 +1,10 @@
+.social-row {
+  display: flex;
+  align-items: flex-end;
+  height: 24px;
+
+  &__item:not(:first-child) {
+    margin-left: 10px;
+    display: flex;
+  }
+}
