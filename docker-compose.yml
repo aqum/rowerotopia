@@ -1,9 +1,8 @@
 jekyll:
-  image: jekyll/jekyll:pages
-  command: jekyll serve --baseurl=""
+  build: ./
+  command: jekyll serve --config _config.yml,_config.dev.yml --watch
   volumes:
-    - ./src:/src
-  working_dir: /src
+    - ./src:/app
   ports:
     - '4000:4000'
 
