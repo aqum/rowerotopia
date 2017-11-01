@@ -1,0 +1,23 @@
+.content-list {
+  font-family: $font-family-serif;
+  font-size: 20px;
+  line-height: 30px;
+
+  &__item {
+    margin: 10px 0 10px 10px;
+  }
+
+  &--small {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &--no-bullets {
+    margin-left: 0;
+
+    .content-list__item  {
+      list-style: none;
+      margin-left: 0;
+    }
+  }
+}
